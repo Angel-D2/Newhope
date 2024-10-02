@@ -41,17 +41,21 @@ body {
 
 /* Header */
 .header-content {
-    background: url('church-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('ci.jpeg') no-repeat center center/cover; /* Added ci.jpeg */
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow for posh effect */
 }
 
 .header-content img {
-    max-width: 100px;
+    max-width: 150px; /* Slightly larger logo */
+    border-radius: 50%; /* Optional: Make logo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth to the logo */
 }
 
 nav {
@@ -91,6 +95,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Button shadow for posh look */
 }
 
 .intro-section button:hover {
@@ -99,6 +104,7 @@ nav a:hover {
 
 .about-section {
     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow to elevate section */
 }
 
 .events-section, .sermons-section {
@@ -120,4 +126,10 @@ footer a {
 
 footer a:hover {
     color: #ddd;
+}
+
+/* Polished finish for the entire page */
+body {
+    background: linear-gradient(180deg, #e0e0e0, #f7f7f7);
+    font-family: 'Roboto', sans-serif; /* Enhanced font for a cleaner look */
 }
