@@ -41,8 +41,7 @@ body {
 
 /* Header */
 .header-content {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('ci.jpeg') no-repeat center center/cover; /* Added ci.jpeg */
+
     height: 400px;
     display: flex;
     flex-direction: column;
