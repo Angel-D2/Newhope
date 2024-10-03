@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Updated font for cleaner look */
     background-color: #f4f4f4;
     color: #333;
 }
@@ -41,7 +41,8 @@ body {
 
 /* Header */
 .header-content {
-
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('ci.jpeg') no-repeat center center/cover; /* Added ci.jpeg */
     height: 400px;
     display: flex;
     flex-direction: column;
