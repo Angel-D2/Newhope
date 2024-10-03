@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <!-- Top bar with search and contact icons -->
         <div class="top-bar">
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
@@ -19,19 +20,26 @@
             </div>
         </div>
 
-        <div class="header-content">
-            <img src="logo.jpeg" alt="New Hope Church Logo"> <!-- Inserted the logo -->
+        <!-- Logo and Navigation under the search bar -->
+        <div class="header-logo-nav">
             <nav>
                 <a href="#new">I’m New</a>
                 <a href="#about">About</a>
                 <a href="#events">Events</a>
                 <a href="#sermons">Sermons</a>
-                <a href="#photos">Photos</a>
-                <a href="#volunteers">Volunteers Needed</a> <!-- Added Volunteers Needed Section Link -->
+                <a href="#gallery">Gallery</a>
+                <a href="#involved">Get Involved</a>
             </nav>
+            <img src="logo.jpeg" alt="New Hope Church Logo"> <!-- Logo positioned below nav -->
         </div>
     </header>
 
+    <!-- Cover Section with Bold Text -->
+    <div class="cover-image">
+        <h1 class="cover-text">Join us Sunday morning at 10:30</h1>
+    </div>
+
+    <!-- Sections -->
     <section id="new" class="intro-section">
         <h1>Welcome to New Hope Church!</h1>
         <p>We’re glad you’re here. Explore our community and get connected!</p>
@@ -53,28 +61,18 @@
         <p>Watch our most recent sermons here.</p>
     </section>
 
-    <section id="photos" class="photos-section">
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <img src="photo1.jpg" alt="Event 1">
-            <img src="photo2.jpg" alt="Event 2">
-            <img src="photo3.jpg" alt="Event 3">
-        </div>
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <p>Browse moments from our community events.</p>
     </section>
 
-    <section id="volunteers" class="volunteers-section">
-        <h2>Volunteers Needed</h2>
-        <p>We’re always looking for dedicated volunteers to help with various activities at the church. Whether it's helping with events, preparing meals, or assisting in community outreach programs, your contribution makes a difference.</p>
-        <ul>
-            <li>Event Coordinators</li>
-            <li>Worship Team Members</li>
-            <li>Community Outreach Helpers</li>
-            <li>Child Care Volunteers</li>
-            <li>Food Preparation Team</li>
-        </ul>
-        <button>Sign Up to Volunteer</button>
+    <section id="involved" class="involved-section">
+        <h2>Get Involved</h2>
+        <p>Discover ways to contribute and make an impact in our church community.</p>
+        <button>Find Opportunities</button>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="address">
