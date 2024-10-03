@@ -39,53 +39,56 @@ body {
     color: #ddd;
 }
 
-/* Header with logo and navigation */
-.header-logo-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.header-logo-nav nav {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-}
-
-.header-logo-nav nav a {
-    margin: 0 15px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.header-logo-nav nav a:hover {
-    color: #555;
-}
-
-.header-logo-nav img {
-    max-width: 100px;
-    border-radius: 50%; /* Optional circular logo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Cover image */
+/* Cover image with overlay navigation and text */
 .cover-image {
     background: url('ci.jpeg') no-repeat center center/cover;
-    height: 300px;
+    height: 500px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.overlay-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.cover-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cover-nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cover-nav a:hover {
+    color: #ddd;
+}
+
+/* Centered logo */
+.logo-center {
+    margin: 40px auto 20px;
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Bold text on cover image */
 .cover-text {
     color: #fff;
     font-size: 2.5em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
 }
 
 /* Sections */
