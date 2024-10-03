@@ -39,67 +39,74 @@ body {
     color: #ddd;
 }
 
-/* Cover image with overlay navigation and text */
-.cover-image {
-    background: url('ci.jpeg') no-repeat center center/cover;
-    height: 500px;
-    position: relative;
+/* Header */
+.header-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('ci.jpeg') no-repeat center center/cover; /* Added ci.jpeg */
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.overlay-content {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.cover-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.cover-nav a {
-    margin: 0 15px;
     color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.cover-nav a:hover {
-    color: #ddd;
+.logo-section {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 100%;
 }
 
-/* Centered logo */
-.logo-center {
-    margin: 40px auto 20px;
+.logo-section img {
     max-width: 150px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Bold text on cover image */
-.cover-text {
-    color: #fff;
+.logo-section h1 {
+    color: #800020; /* Burgundy color for the header text */
     font-size: 2.5em;
+    margin-top: 15px;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+}
+
+nav a:hover {
+    color: #ddd;
 }
 
 /* Sections */
-.intro-section, .about-section, .events-section, .sermons-section, .gallery-section, .involved-section {
+.intro-section, .about-section, .events-section, .sermons-section, .gallery-section, .involvement-section {
     padding: 50px 20px;
     text-align: center;
 }
 
-.intro-section button, .involved-section button {
+.intro-section {
+    background-color: #f9f9f9;
+}
+
+.intro-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro-section button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #800020; /* Burgundy button */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -107,8 +114,17 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.intro-section button:hover, .involved-section button:hover {
-    background-color: #555;
+.intro-section button:hover {
+    background-color: #a04040;
+}
+
+.about-section, .events-section, .gallery-section, .involvement-section {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sermons-section {
+    background-color: #f4f4f4;
 }
 
 /* Footer */
