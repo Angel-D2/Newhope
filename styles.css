@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff; /* White background */
-    color: #800020; /* Burgundy text */
+    color: #333;
 }
 
 /* Top bar */
@@ -41,14 +41,13 @@ body {
 
 /* Header (Cover Image with Navigation and Logo) */
 .header-content {
-    background: linear-gradient(rgba(128, 0, 32, 0.7), rgba(128, 0, 32, 0.7)), 
-                url('ci.jpeg') no-repeat center center/cover; /* Cover Image */
+    background: url('ci.jpeg') no-repeat center center/cover; /* Cover Image without tint */
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    color: #fff;
     position: relative;
     text-align: center;
 }
