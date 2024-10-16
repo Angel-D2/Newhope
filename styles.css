@@ -1,144 +1,44 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Custom Styles for New Hope Church */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* White background */
-    color: #333;
 }
 
-/* Top bar */
-.top-bar {
+.bg-burgundy {
     background-color: #800020; /* Burgundy color */
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    align-items: center;
 }
 
-.search-bar input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+.hero-section {
+    background-image: url('assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
 }
 
-.contact-icons a {
-    color: #fff;
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.contact-icons a:hover {
-    color: #ddd;
-}
-
-/* Header (Cover Image with Navigation and Logo) */
-.header-content {
-    background: url('ci.jpeg') no-repeat center center/cover; /* Cover Image without tint */
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: relative;
-    text-align: center;
-}
-
-.logo-section {
-    text-align: center;
-}
-
-.logo-section img {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-
-.logo-section h1 {
-    color: #800020; /* Burgundy text */
-    font-size: 2.5em;
-    margin-top: 15px;
-}
-
-/* Navigation (inside cover image) */
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
+.hero-section h1 {
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
-nav a:hover {
-    color: #ffd700;
+.hero-section p {
+    font-size: 1.5rem;
 }
 
-/* Sections */
-.intro-section, .about-section, .events-section, .sermons-section, .gallery-section, .involvement-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
+.btn-burgundy {
+    background-color: #800020;
+    color: white;
 }
 
-.intro-section {
-    background-color: #f9f9f9;
+.btn-burgundy:hover {
+    background-color: #66001A;
+    color: white;
 }
 
-.intro-section h1 {
-    font-size: 2.5em;
-    color: #800020; /* Burgundy color */
-    margin-bottom: 20px;
+.card img {
+    height: 200px;
+    object-fit: cover;
 }
 
-.intro-section button {
-    padding: 10px 20px;
-    background-color: #800020; /* Burgundy button */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.intro-section button:hover {
-    background-color: #a04040;
-}
-
-.about-section, .events-section, .gallery-section, .involvement-section {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.sermons-section {
-    background-color: #f4f4f4;
-}
-
-/* Footer */
 footer {
-    background-color: #800020; /* Burgundy color */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #ffd700;
+    background-color: #800020;
+    color: white;
 }
