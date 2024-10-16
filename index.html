@@ -4,79 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Hope Church</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-            </div>
-            <div class="contact-icons">
-                <a href="mailto:new.hope.thunder.bay@gmail.com">Email Us</a>
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-burgundy">
+        <a class="navbar-brand" href="#">New Hope Church</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <!-- Cover Image Section with Navigation and Logo -->
-        <div class="header-content">
-            <nav>
-                <a href="#new">I’m New</a>
-                <a href="#about">About</a>
-                <a href="#events">Events</a>
-                <a href="#sermons">Sermons</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#get-involved">Get Involved</a>
-            </nav>
-
-            <div class="logo-section">
-                <img src="logo.jpeg" alt="New Hope Church Logo"> <!-- Logo in the center -->
-                <h1>Join us Sunday morning at 10:30 AM</h1> <!-- Burgundy-colored text -->
-            </div>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="text-white">Welcome to New Hope Church</h1>
+            <p class="text-white lead">Join us every Sunday at 10:30 AM</p>
+            <a href="#events" class="btn btn-lg btn-outline-light">Upcoming Events</a>
         </div>
     </header>
 
-    <section id="new" class="intro-section">
-        <h1>Welcome to New Hope Church!</h1>
-        <p>We’re glad you’re here. Explore our community and get connected!</p>
-        <button>Get Involved</button>
-    </section>
-
-    <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>We are a community-driven church in Thunder Bay dedicated to spreading the love of Christ.</p>
-    </section>
-
-    <section id="events" class="events-section">
-        <h2>Upcoming Events</h2>
-        <p>Check out our upcoming church events and volunteer opportunities.</p>
-    </section>
-
-    <section id="sermons" class="sermons-section">
-        <h2>Latest Sermons</h2>
-        <p>Watch our most recent sermons here.</p>
-    </section>
-
-    <section id="gallery" class="gallery-section">
-        <h2>Gallery</h2>
-        <p>Check out photos from our recent events.</p>
-    </section>
-
-    <section id="get-involved" class="involvement-section">
-        <h2>Get Involved</h2>
-        <p>Looking to volunteer or get connected with us? Here’s how you can help.</p>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="address">
-                <p>Address: 532 Edward St N, Thunder Bay, ON P7C 4P9</p>
-            </div>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:new.hope.thunder.bay@gmail.com">new.hope.thunder.bay@gmail.com</a></p>
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About New Hope Church</h2>
+                    <p>New Hope Church is a place of worship, community, and fellowship. Our mission is to spread the love of Jesus Christ and serve the Thunder Bay community through our various ministries and programs.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/church.jpg" alt="Church Image" class="img-fluid rounded">
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Upcoming Events</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/sunday_school.jpg" alt="Sunday School">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunday School</h5>
+                            <p class="card-text">Every Sunday at 9:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/youth_program.jpg" alt="Youth Program">
+                        <div class="card-body">
+                            <h5 class="card-title">Youth Program</h5>
+                            <p class="card-text">Every Friday at 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/bible_study.jpg" alt="Bible Study">
+                        <div class="card-body">
+                            <h5 class="card-title">Bible Study</h5>
+                            <p class="card-text">Every Wednesday at 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-burgundy btn-block">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Visit Us</h4>
+                    <p>532 Edward St N, Thunder Bay, ON P7C 4P9</p>
+                    <h4>Service Times</h4>
+                    <p>Sundays at 10:30 AM</p>
+                    <p>Phone: (807) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-burgundy text-white text-center py-4">
+        <p>&copy; 2024 New Hope Church. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
